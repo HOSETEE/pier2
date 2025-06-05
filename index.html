@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOSETEE 試衣間</title>
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://hosetee.github.io/pier2/";
+    }, 5000);
+  </script>
   <style>
     * {
       margin: 0;
@@ -283,23 +288,5 @@
       </div>
     </div>
   </div>
-  <script>
-  let idleTimer;
-  const IDLE_TIMEOUT = 5000; // 5秒
-  const HOMEPAGE = 'https://hosetee.github.io/pier2/'; // 改成首頁網址
-
-  function resetTimer() {
-    clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => {
-      location.href = HOMEPAGE;
-    }, IDLE_TIMEOUT);
-  }
-
-  ['click', 'mousemove', 'keydown', 'touchstart'].forEach(event => {
-    window.addEventListener(event, resetTimer);
-  });
-
-  resetTimer();
-</script>
 </body>
 </html>
